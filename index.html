@@ -3,9 +3,63 @@
         <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <script src="js/jquery-1.11.2.js"></script>
         <script src="js/scripts.js"></script>
-        <title></title>
+        <link rel="stylesheet" href="css/styles.css" type='text/css'>
+        <title>Movie Ticket</title>
     </head>
     <body>
-        
+        <div class='container'>
+            <h1>Movie Ticket</h1>
+            <form id="ticket">
+                <div>
+                <label for="movie_title">Movie choices :</label>
+                <select id="movie_title">
+                    <option value='RED'>RED</option>
+                    <option value='Furious 7'>Furious 7</option>
+                    <option value='Divergent'>Divergent</option>
+                    <option value='Alien'>Alien</option>
+                    <option value='Mean Girls'>Mean Girls</option>
+                </select> <br>
+            </div>
+            <div>
+
+                <label for="age">Your age :</label>
+                <input type="number" id='age' class='form-control' required> <br>
+            </div>
+            <div>
+
+                <label for="movie_time">Time of the day :</label>
+                <select id="movie_time" type="number">
+                    <option value='1000'>10 am</option>
+                    <option value='1100'>11 am</option>
+                    <option value='1200'>12 pm</option>
+                    <option value='1300'>1 pm</option>
+                    <option value='1400'>2 pm</option>
+                    <option value='1500'>3 pm</option>
+                    <option value='1600'>4 pm</option>
+                    <option value='1700'>5 pm</option>
+                    <option value='1800'>6 pm</option>
+                    <option value='1900'>7 pm</option>
+                    <option value='2000'>8 pm</option>
+                    <option value='2100'>9 pm</option>
+                    <option value='2200'>10 pm</option>
+
+                </select>
+            </div>
+            <div>
+
+                <label for="first_release">First Release :</label>
+                <select id="first_release">
+                    <option value='true'>YES</option>
+                    <option value='false'>NO</option>
+                </select>
+            </div>
+            <button type='submit' class='btn btn-warning'>See the price</button>
+
+            </form>
+
+            <div id="result">
+                <h3>The price is for you is $<span class='price'></span>.</h3>
+            </div>
+        </div>
     </body>
 </html>
